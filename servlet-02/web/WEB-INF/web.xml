@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+<!--    配置初始化参数-->
+    <context-param>
+        <param-name>url</param-name>
+        <param-value>jdbc:mysql://localhost</param-value>
+    </context-param>
+    <servlet>
+    <servlet-name>hello</servlet-name>
+    <servlet-class>com.stx.controller.HelloServlet</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>hello1</servlet-name>
+        <servlet-class>com.stx.controller.GetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hello1</servlet-name>
+        <url-pattern>/hello1</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>url</servlet-name>
+        <servlet-class>com.stx.controller.Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>url</servlet-name>
+        <url-pattern>/url</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>s2</servlet-name>
+        <servlet-class>com.stx.controller.Servlet02</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>s2</servlet-name>
+        <url-pattern>/s2</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,5 @@
+# Project exclude paths
+/out/
+/response/target/
+/servlet-01/target/
+/servlet-02/target/
